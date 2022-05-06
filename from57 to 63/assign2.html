@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function calculate(firstNum, secondNum="error", operation) {
+    if (secondNum==="error"){
+return "Second Number Not Found"
+    }
+    if (operation==="add"){
+  return firstNum+secondNum
+    } else if (operation==="subtract"){
+return firstNum-secondNum 
+} 
+   
+if (operation==="multiply"){
+return firstNum*secondNum
+    }else{
+        return firstNum+secondNum
+    }
+}
+
+// Needed Output
+console.log(calculate(20)) // Second Number Not Found
+console.log(calculate(20, 30))// 50
+console.log(calculate(20, 30, 'add') )// 50
+console.log(calculate(20, 30, 'subtract') )// -10
+console.log(calculate(20, 30, 'multiply'))// 600
+
+    </script>
+</body>
+</html>

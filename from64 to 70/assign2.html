@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+
+function itsMe() {
+  return `Iam A Normal Function`;
+}
+console.log(itsMe()); // Iam A Normal Function
+
+let itsMe2=() => `Iam An Arrow Function`
+console.log(itsMe2())
+
+////////////////////////
+function urlCreate(protocol, web, tld) {
+  return `${protocol}://www.${web}.${tld}`;
+}
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+let urlCreate2= (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
+console.log(urlCreate2("https", "elzero", "org"))
+</script>
+</body>
+</html>

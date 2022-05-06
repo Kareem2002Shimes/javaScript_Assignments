@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ageInTime(theAge) {
+ if (theAge>10 && theAge<100){
+ console.log(`${theAge * 12} Months`) 
+ console.log(`${theAge * 12 *4} Weeks`) 
+ console.log(`${theAge *365} Days`) 
+ console.log(`${theAge *365*24} Hours`) 
+ console.log(`${theAge *365*24} Minutes`) 
+ console.log( `${theAge *365*24} Seconds`)
+
+ }else{
+     return "Age Out Of Range"
+ }
+}
+
+// Needed Output
+console.log(ageInTime(110)); // Age Out Of Range
+// Months Example => 456 Months
+(ageInTime(38)); // Months Example => 456 Months
+
+    </script>
+</body>
+</html>

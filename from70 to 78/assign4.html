@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+        let onlyNums=numsAndStrings.filter(function(ele){
+          if (typeof ele ==="number"){
+                   return ele
+          }
+        }).map(function(ele){
+            if (ele>0 || ele<0 ){
+                return ele=-ele
+            }
+        })
+        console.log(onlyNums)
+    </script>
+</body>
+</html>

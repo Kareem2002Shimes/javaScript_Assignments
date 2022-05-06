@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function specialMix(...data) {
+            let result = 0;
+  for (i = 0; i < data.length; i++) {
+    let b = data[i][0];
+    if (typeof data[i] === "string") {
+      if (48 > b.charCodeAt() || b.charCodeAt() > 57) {
+        continue;
+      }
+    }
+    result +=parseInt(data[i]);
+  }
+  if (result === 0) {
+    return `all are strings`;
+  } else {
+    return result;
+  }
+   
+}
+console.log(specialMix(10, 20, 30)); // 60
+console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
+</script>
+</body>
+</html>

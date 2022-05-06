@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="#" alt="One" />
+<img src="#" />
+<img src="#" alt="Three" />
+<img src="#" />
+<img src="#" />
+    <script>       
+    let images=document.images
+      for (let i=0;i<images.length;i++){
+        if (images[i].hasAttribute("alt")){
+            images[i].setAttribute("alt","Old")
+        }else{
+            images[i].setAttribute("alt","Elzero New")
+
+        }
+       }
+      
+    </script>
+</body>
+</html>

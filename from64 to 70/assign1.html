@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+function getDetails(zName, zAge, zCountry) {
+let name=zName.slice(0,5)+" "+zName.slice(6,7)
+let age=zAge.slice(0,2)
+let country=zCountry.slice(0,2).toUpperCase()
+function namePattern(){
+ return `${name}`
+}
+function ageWithMessage(){
+    return `${age}`
+}
+function countryTwoLetters(){
+    return `${country}`
+}
+
+function fullDetails(){
+    return `Hello ${namePattern()}., Your Age Is ${ageWithMessage()}, You Live In ${countryTwoLetters()}`
+}
+
+return fullDetails()
+}
+
+console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+// Hello Osama M., Your Age Is 38, You Live In EG
+
+console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+// Hello Ahmed A., Your Age Is 32, You Live In SY
+
+    </script>
+</body>
+</html>

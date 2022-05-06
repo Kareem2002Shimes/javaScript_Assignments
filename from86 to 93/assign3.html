@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #444;
+            padding: 30px;
+            margin: 40px;
+        }
+        form{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            background-color: #777;
+            height: 50vh;
+            border-radius: 5px;
+        }
+        form input{
+            margin-bottom: 30px;
+            background: none;
+            border: 1px solid rgba(0, 238, 255, 0.479);
+            color: white;
+            border-radius: 5px;
+            padding: 10px 15px;
+            color: rgba(0, 0, 0, 0.609);
+            outline: none;
+        }
+        form input::placeholder{
+            color: #eee;
+        }
+        form div{
+            letter-spacing: 0.8px;
+            font-size: 20px;
+            color: #eee;
+        }
+    </style>
+        <form action="">
+  <input  type="number" name="dollar" placeholder="USD Dollar" />
+  <div  class="result">{<span>0</span>} USD Dollar = {<span>0</span>} Egyptian Pound</div>
+</form>
+    <script>
+        let currInput=document.querySelector("[name='dollar']");
+        let usCurr=document.querySelector("form div span:first-child");
+        let egCurr=document.querySelector("form div span:last-child");
+        currInput.oninput=function(){
+              usCurr.innerHTML=currInput.value;
+            egCurr.innerHTML=(currInput.value * 15.6).toFixed(2);
+        }
+       
+        
+        document.forms[0].onsubmit=function(ele){
+            ele.preventDefault()
+        }
+    </script>
+</body>
+</html>

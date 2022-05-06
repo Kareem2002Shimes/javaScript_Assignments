@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn | JS</title>
+</head>
+<body>
+    <form action="">
+   <div class="box">   
+    <input type="text" name="fname" placeholder="Enter Your Name">
+    <input type="text" name="lname" placeholder="Enter Your Last Name">
+    <input type="email" name="email" placeholder="Enter Your Email"></div>
+       <select name="option"  class="select-box">
+           <option value="--Select--">--Select--</option>
+           <option value="HTML">HTML</option>
+           <option value="CSS">CSS</option>
+           <option value="JS">JS</option>
+           <option value="PHP">PHP</option>
+           <option value="JAVA">JAVA</option>
+       </select>
+    </form>
+    <style>
+        form{
+            position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    height: 400px;
+    width: 800px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+        form .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        }
+        .box input{
+            width: 500px;
+    height: 30px;
+    outline: none;
+    margin-bottom: 30px;
+
+        }
+        
+        .select-box{
+            outline: none;
+    padding: 5px;
+    background-color: rgb(0,0,0,.5);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+</html>

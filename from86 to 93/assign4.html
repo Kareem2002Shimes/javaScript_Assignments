@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one" title="one">One</div>
+    <div class="two" title="two">Two 2</div>
+    <script>
+let f_Div=document.querySelector(".one");
+let s_Div=document.querySelector(".two");
+let f_Title=f_Div.title;  // copy of first title div
+let f_Text=f_Div.innerHTML // copy of first content div
+
+//  Chance Titles
+f_Div.title=s_Div.title;
+s_Div.title=f_Title;
+
+// Change Contents
+
+f_Div.innerHTML=s_Div.innerHTML
+s_Div.innerHTML=`${f_Text} ${document.getElementsByTagName("div").length}`
+
+
+
+
+
+
+    </script>
+</body>
+</html>
